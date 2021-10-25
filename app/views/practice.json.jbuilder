@@ -61,3 +61,17 @@ end
 json.merge! @tweet.attributes
 
 {"tweet": {"id": 1, "text": "テキスト1", "title": "タイトル1", "user_id": 1} }
+
+配列で回してくれる。
+json.array! @tweets, :text,:title
+=> [{"text": "テキスト１", "title": "タイトル１"}, {"text": "テキスト２", "title": "タイトル２"}]
+
+＝
+json.array! @tweets do |text|
+  json.text @tweet.text
+  json.title @tweet.title
+end
+
+json.tweet do
+ json.array! @tweets, :text, :title
+end
