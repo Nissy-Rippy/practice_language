@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'events/update'
+  get 'events/destroy'
+  get 'events/create'
   devise_for :users
   resources :users
   resources :pictures
