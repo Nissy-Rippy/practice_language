@@ -6,16 +6,28 @@ class EventsController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
-    event = Event.find(params(:id))
-    event.destroy
-    redirect_to user_path(@user)
+      begin
+        @user = User.find(params[:id])
+        event = Event.find(params(:id))
+        event.destroy
+      rescue => error
+        flash[:notice] = "削除に失敗しました！！"
+      ensure
+        redirect_to user_path(@user)
+      end
   end
 
   def create
-    @event = Event.new(event_params)
-    @event.save!
-    @events = Event.where(user_id: current_user.id)
+    @event = Event.new
+    begin
+      @event.save!
+    rescue Zerodivision
+      puts "0で除算しました"
+    rescue NoMethodError
+      puts "ネーミングが間違えています。"
+    ensure
+      @events = Event.where(user_id: current_user.id)
+    end
   end
 
 private
