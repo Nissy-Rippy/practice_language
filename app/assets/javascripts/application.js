@@ -111,3 +111,67 @@ function winLose(user, js){
 
   return winLoseStr;
 }
+
+
+
+$(document).ready(function(){
+  $("body").html("<h1>Hello Jquery</h1>");
+});
+// プロパティ―と値をシングルオートで囲む´
+$(function(){
+ $(".box").css({
+   'background-color': 'blue',
+   'heigh': '100px'
+ });
+});
+
+$(function(){
+  $(".box").slideDown();
+});
+
+$(function(){
+  $(".box").slideUp();
+});
+
+$(function(){
+  $(".box").hide();
+});
+
+
+$(function(){
+   $(".box").slideDown(function(){
+     $(".box").css({
+       'background-color': 'blue',
+       'height': '100px'
+     }).slideDown();
+   });
+});
+
+
+$(function(){
+  $(".box").mouseover(function(){
+    $(".box").css({'background': 'red'});
+  });
+  $(".box").mouseout(function(){
+    $(".box").css({'background': 'blue'});
+  });
+  });
+  
+$(function(){
+  $('.box').mouseover(function(){
+    $('.box').addClass('.box5');
+  });
+  $('.box').mouseout(function(){
+    $('.box').removeClass('.box5');
+  });
+});
+
+
+$(function(){
+  $('.box1').on('click', function(){
+    $('.box1').addClass('.box4');
+  });
+  $('.box1').mouseover(function(){
+    $('box1').removeClass('.box4');
+  });
+});
