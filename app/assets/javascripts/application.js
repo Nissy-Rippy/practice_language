@@ -175,3 +175,64 @@ $(function(){
     $('box1').removeClass('.box4');
   });
 });
+
+// thisを使うとコンパクトにできる
+$(function(){
+  
+  $('.bg1').on('click', function(){
+    $('.bg1').slideUp();
+  });
+
+  $('.bg2').on('click', function(){
+    $('.bg2').slideUp();
+  });
+
+  $('.bg3').on('click', function(){
+    $('.bg3').slideUp();
+  });
+
+  $('.bg4').on('click', function(){
+    $('.bg4').slideUp();
+  });
+});
+
+$(function(){
+  $('.box1').on('click', function(){
+    $(this).slideUp();
+  });
+});
+
+$(function(){
+  $('ul').children().css({'color': 'red'});
+});
+
+$(function(){
+  $('#back a').on('click', function(event){
+   $('body,html').animate({
+     scrollTop: 0,
+   },800);
+   event.preventDefault();
+  });
+});
+
+
+$(function(){
+  $(".box1").on('click', function(e){
+    $(this).toggleClass('active');
+    $('#box3').fadeToggle();
+    e.preventDefault();
+  });
+});
+
+
+// これは、初期表示のためのコード
+$('#tab-content .tab[tab != "tab1"]').hide();
+
+$('#tab-manu a').on('click', function(e){
+  $('#tab-content .tab').hide();
+  $('#tab-manu .active').removeClass('active');
+  $(this).addClass('active');
+  $($(this).attr('href')).show();
+});
+
+
