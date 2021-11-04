@@ -235,4 +235,34 @@ $('#tab-manu a').on('click', function(e){
   $($(this).attr('href')).show();
 });
 
-
+$(document).on('turbrinks:reload', function(){
+  $('box1').on('click', function(e){
+    $(this).toggleClass('active');
+    $('.box2').fadeToggle();
+  $('.box3').mouseover(function(){
+    $('box3').css({
+      'colore': 'red',
+      'backgoroun-color': 'blue'
+    });
+    $('box3').mouseout(function(){
+      $('.box3').removeClass('active');
+    });
+  });
+    e.preventDefault();
+  });
+});
+$(document).ready(function(){
+  $('search-input').on('click', function(){
+    let input = $('search-input').val();
+    $.ajax({
+      type: 'GET',
+      url: '/videos/search',
+      data: {keyword: input},
+      dataType: 'json'
+    })
+    
+    .done(function(){
+      
+    });
+  });
+});
