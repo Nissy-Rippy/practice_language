@@ -72,3 +72,29 @@ $(function() {
   );
 });
 
+$(function() {
+  // 「#login-show」要素に対するclickイベントを作成してください
+  $('#login-show').click(function(){
+    $('#login-modal').fadeIn();
+  });
+  
+});
+
+$(function() {
+  $('#hide-btn').click(function(){
+    $('.slide').eq(1).fadeOut();
+  });
+  
+});
+
+
+(function() {
+  $('.index-btn').click(function() {
+    $('.active').removeClass('active');
+    
+    var clickedIndex = $('.index-btn').index($(this));
+    
+    $('.slide').eq(clickedIndex).addClass('active');
+    
+  });
+});
