@@ -102,3 +102,60 @@ class Main {
     
   }
 }
+
+class Main {
+  public static void main(String[] args) {
+ 
+    double number1 = 8.5;
+    
+    double number2 = 3.4;
+        System.out.println(number1 + number2);
+        System.out.println(number1 - number2);
+    
+  }
+  
+  
+  class Main {
+  public static void main(String[] args) {
+    int month = 12;
+    int date = 31;
+    
+    System.out.println(month + "月" + date + "日");
+    
+    System.out.println(7 / 2);
+    
+    System.out.println(7.0 / 2.0);
+    
+    System.out.println(7 / 2.0);
+    
+  }
+  
+  
+  class Main {
+  public static void main(String[] args) {
+    int number1 = 7;
+    int number2 = 2;
+    System.out.println(number1 / number2);
+    
+    System.out.println((double)number1 / number2);
+    
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    String name = "武藤敬司";
+        int age = 33;
+    
+    double height = 1.2;
+    double weight = 20.9;
+    
+    double bmi = weight / height / height;
+
+    System.out.println("名前は" + name + "です");
+    System.out.println("年齢は" + age + "歳です");
+    System.out.println("体重は" +  weight + "kgです");
+    System.out.println("身長は" + height + "mです");
+    System.out.println("BMIは" + bmi +"です");
+    }
+  }
