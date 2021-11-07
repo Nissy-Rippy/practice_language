@@ -144,6 +144,7 @@ $(function() {
   });
 });
 
+
 $(function() {
   $('#find-method').click(function() {
     var $wrapper = $('wrapper');
@@ -176,6 +177,12 @@ $(function() {
     $('#login-modal').fadeIn();
   });
   
+  $('#login-show').click(function(){
+    $('#login-modal').mouseout(function(){
+      $('login-modal').fadeOut();
+    });
+  });
+  
 });
 
 $(function() {
@@ -197,3 +204,4 @@ $(function() {
     
   });
 });
+var clickedIndex = $
