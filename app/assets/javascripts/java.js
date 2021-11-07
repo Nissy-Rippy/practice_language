@@ -49,4 +49,56 @@ class Main {
     String text = "プログラミングを勉強しよう";
     
     System.out.println("Progateで" + text);
+  
+  
+  
+    class Main {
+    public static void main(String[] args) {
+    int number = 11;
+    String text = "Ruby";
+    System.out.println(number);
+    System.out.println(text);
+    number = 9;
+    System.out.println(number);
+    text = "java";
     
+    System.out.println(text);
+    
+    class Main {
+  public static void main(String[] args) {
+    int number = 3;
+    System.out.println(number);
+    
+    number = number + 3;
+    
+    System.out.println(number);
+      
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    int number = 8;
+    
+    number *= 7
+    System.out.println(number);
+    
+    number ++;
+    
+    System.out.println(number);
+    
+    
+    class Main {
+  public static void main(String[] args) {
+    int length = 6;
+    int height = 8;
+    
+    int rectangleArea = length * height;
+    System.out.println(rectangleArea);
+    
+    int triangleArea = length * height / 2;
+
+    System.out.println(triangleArea);
+    
+  }
+}
