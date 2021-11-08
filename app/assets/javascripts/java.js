@@ -261,3 +261,137 @@ class Main {
     }
   }
 }
+
+class Main {
+  public static void main(String[] args) {
+    int number = 13;
+    
+    switch (number % 5) {
+      case 0:
+        System.out.println("大吉です");
+        break;
+      case 1:
+        System.out.println("中吉です");
+        break;
+      case 4:
+        System.out.println("凶です");
+        break;
+      default:
+      System.out.println("吉です");
+      break;
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    int number = 10;
+    
+    while(number > 0){
+      System.out.println(number);
+      number--;
+    }
+    
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+   for(int i = 1; i <= 10; i++){
+     System.out.println(i + "回目のループです");
+   }
+    
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("=== while文 ===");
+    int i = 1;
+    while (i < 10) {
+      if( i % 5 == 0){
+      break;
+    }
+      System.out.println(i);
+      i++;
+      
+    }
+    System.out.println("=== for文 ===");
+    for (int j = 1; j < 10; j++) {
+      if(j % 3 == 0){
+        continue;
+      }
+      
+      System.out.println(j);
+    }
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    String[] names = {"にんじゃわんこ","ひつじ仙人","ベイビーわんこ"};
+    
+    System.out.println(names[0]);
+    
+    System.out.println(names[2]);
+    
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    String [] languages = {"Ruby", "PHP", "Python"};
+    
+    System.out.println(languages[1]);
+    
+    languages[1] = "Java";
+    
+    System.out.println(languages[1]);
+    
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+    
+   for(int i = 0; i < names.length; i++){
+     System.out.println("私の名前は" + names[i] + "です");
+   }
+    
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+    
+    for(String name: names){
+      System.out.println(name);
+    }
+    
+  }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    int oddSum = 0;
+    int evenSum = 0;
+    int[] numbers = {1,4,6,9,13,16};
+    for(int number: numbers){
+      if(number % 2 == 0){
+        evenSum += number;
+      }else{
+        oddSum += number;
+      }
+    }
+    System.out.println("奇数の和は" + oddSum + "です");
+    System.out.println("偶数の和は" + evenSum + "です");
+  }
+}
