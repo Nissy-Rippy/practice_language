@@ -63,6 +63,18 @@ $(function() {
     $('#wrapper').children('a').fadeOut();
   });
 });
+$(function() {
+  $('#find-method').click(function() {
+    var $wrapper = $('wrapper');
+    
+    $('#wrapper').find('a').css('color','red');
+    
+  });
+  
+  $('#children-method').click(function() {
+    $('#wrapper').children('a').fadeOut();
+  });
+});
 
 // hoverは、（）の引数にfunctionを二つ入れているので()と{}に注意しよう
 

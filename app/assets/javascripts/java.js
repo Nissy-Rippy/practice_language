@@ -395,3 +395,81 @@ class Main {
     System.out.println("偶数の和は" + evenSum + "です");
   }
 }
+
+
+class Main {
+  public static void main(String[] args) {
+    if (true) {
+      System.out.println("条件式がtrueのため、出力されます");
+    }
+
+    if (false) {
+      System.out.println("条件式がfalseのため、出力されません");
+    }
+
+    int x = 5;
+    if( x > 2){
+      System.out.println("xは2より大きい");
+    }
+
+    if(x > 8){
+      System.out.println("xは8より大きい");
+    }
+
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    int number = 12;
+
+    if (number < 10) {
+      System.out.println("10より小さい");
+    }else if(20 > number){
+      System.out.println("10以上、20より小さい");
+    }else{
+      System.out.println("20以上");
+    }
+
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    int number = 12;
+
+    switch(number % 3) {
+    case 0:
+      System.out.println("3で割り切れます");
+      break;
+    case 1:
+     System.out.println("3で割ると1余ります");
+     break;
+    case 2:
+      System.out.println("3で割ると2余ります");
+    break;
+    }
+  }
+}
+
+
+
+class Main {
+  public static void main(String[] args) {
+    int number = 12;
+
+    // switch文を用いて、numberを3で割った余りで条件分岐をしてください
+    switch(number % 3){
+    case 0:
+      System.out.println("3で割り切れます");
+      break;
+    case 1:
+     System.out.println("3で割ると1余ります");
+     break;
+    case 2:
+      System.out.println("3で割ると2余ります");
+      break;
+
+    }
+  }
+}
