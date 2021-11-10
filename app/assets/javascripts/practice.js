@@ -39,6 +39,11 @@ $(function() {
    });
 });
 
+$(function(){
+  $('#change-text').click(function(){
+    $('#text').html('<a hre="https//prog-8.com/"></a>');
+  });
+});
 
 $(function() {
   $('.list-item').click(function(){

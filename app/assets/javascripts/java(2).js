@@ -92,3 +92,11 @@ class Person {
   }
 }
 
+class Person{
+  public String name;
+  
+  public void hello(name){
+    System.out.println(name + "こんにちは、おはようございます");
+    System.out.println(name + "さんこんにちは！");
+  }
+}
