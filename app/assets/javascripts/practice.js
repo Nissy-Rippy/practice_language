@@ -222,3 +222,14 @@ $(function() {
   });
 });
 var clickedIndex = $
+
+
+$('input[type="text"]').val('');
+
+$('#inputScheduleForm').modal('hide');
+$('#inputEditForm').html('<%= escape_javascript(render("url") %>');
+$('#calendar').fullCalendar('refetchEvents')
+
+$('#inputEditForm').html('<%= escape_javascript(render("practice/practices", events: @events)) %>');
+$('.modal-backdrop').remove();
+$('#calendar').fullCalendar('refetchEvents')
